@@ -1,38 +1,92 @@
-.App {
+/* Fenugreek Theme Background */
+.app {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(#E8B55A, #C58A24);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title */
+.title {
+  font-size: 38px;
+  margin-bottom: 25px;
+  color: #5A3A07;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Search Bar */
+.search-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+
+.search-input {
+  width: 320px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.search-btn {
+  background: #5A3A07;
   color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.search-btn:hover {
+  background: #E69E22;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Recipe Grid */
+.recipes-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: rgba(255,255,255,0.9);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.recipe-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe-title {
+  color: #5A3A07;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Button inside card */
+.view-btn {
+  background: #5A3A07;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.view-btn:hover {
+  background: #E69E22;
 }
